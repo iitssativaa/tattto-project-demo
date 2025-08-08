@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.S.S</title>
+    <title>Rionorte Tattoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <style>
+
+        body, html {
+            overflow-x: hidden;
+        }
+        
+        .customnav-link {
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .customnav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .customnav-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        .theme-icon {
+            color: black;
+        }
+
+        .Copyright {
+            color: white;
+        }
+
+        .Copyright:hover {
+            color: red;
+        }
+
+        .hero {
+            height: 60vh;
+            background-image: url('/img/sss.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .hero-overlay {
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .accordion-button {
+            background-color: #111;
+            color: #fff;
+            width: 100%;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .accordion-body {
+            background-color: #1a1a1a;
+            color: #ccc;
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 1rem;
+        }
+
+        .containerfaq {
+            max-width: 700px;
+            width: 100%;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .accordion,
+        .accordion-item,
+        .accordion-collapse,
+        .accordion-body,
+        .accordion-button {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Rionorte Tattoo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="fw-semibold customnav-link nav-link">Ana Sayfa</a></li>
+                        <li class="nav-item"><a href="hizmetler.html"
+                                class="fw-semibold customnav-link nav-link">Hizmetler</a></li>
+                        <li class="nav-item"><a href="hakkinda.html"
+                                class="fw-semibold customnav-link nav-link">Hakkında</a></li>
+                        <li class="nav-item"><a href="#" class="fw-semibold customnav-link nav-link">S.S.S</a>
+                        </li>
+                        <li class="nav-item"><a href="iletisim.html"
+                                class="fw-semibold customnav-link nav-link">İletişim</a></li>
+                        <li class="nav-item"><a href="#" class="fw-semibold theme-icon nav-link"><i
+                                    class="fa-solid fa-moon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            Sıkça Sorulan Sorular
+        </div>
+    </section>
+
+    <div class="containerfaq text-center">
+        <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Acır mı?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Evet, biraz acıyor. Ama öyle "öldüm bittim" türünden değil. Kaş aldırmak kadar acıyan yerler de
+                        var, diş çektirmek gibi hissettiren bölgeler de. Herkesin acı eşiği farklı, ama genelde
+                        dayanılır şeyler.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        İlk Dövmemi Yaptırıyorum, Nelere Dikkat Edeyim?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Kafanda bin tane fikir olabilir ama panik yapma. Temiz bir yer seç, güvenilir bir dövmeci bul
+                        (biz boşuna mı burdayız?) ve acele karar verme. İlk dövme heyecanlıdır ama sabır önemli.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Eski Dövmem Çok Kötü, Silinir Mi?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Evet, sildirme seçenekleri var ama lazerle oluyor, biraz zaman alıyor ve pahalı. Alternatif
+                        olarak üstüne kapatma (cover-up) yapabiliriz. Önce bir görelim ne durumdayız, sonra çözüm
+                        üretiriz.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Randevusuz Gelebilir Miyim?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Geldin diye kovmayız ama yoğunluk durumuna göre boşluk olmayabilir. En iyisi bir randevu
+                        oluştur,
+                        gününü garanti altına al. Ama spontane ruhluysan gel bakalım, belki bir mucize olur.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Hijyen Konusunda Nasılsınız?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Mikrop, enfeksiyon falan bizim işimiz değil. Tek kullanımlık iğneler, steril ortam, dezenfektan
+                        dostluğu... Temizliğe takıntılıyız, gönül rahatlığıyla gelebilirsin.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Dövmeyi Anam Babam Gördü Ne Olur?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Bu sorunun cevabı bende değil :) Ama şunu diyeyim: beden senin, karar senin. Ama yine de aileyle
+                        barışçıl bir ortam güzeldir. Belki önce küçük bir şeyle başlarsın?
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Yazın Dövme Yaptırmak Hakkında?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yazın dövme yapılır, ama biraz ekstra dikkat ister. Güneşe çok maruz kalmamak, denize hemen
+                        atlamamak lazım. Terlemek, kabuğunu erken soymak falan dövmenin düşmanı.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Dövme Yaptırdıktan Sonra Duş Alabilir Miyim?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Evet, ama banyo keyfi kısmı birkaç gün rafa kalkıyor. Ilık su, kısa süreli duş. Kesinlikle
+                        ovalamak yok, süngerle dalmak yok. Temizlik önemli, ama nazik ol.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Eski Sevgilimin Adını Sildirmek İstiyorum!
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Klasik! Ne yazık ki kalıcı hatıralar için silgi yok ama kapatma sanatı var. Gel, birlikte
+                        geçmişi biraz yeniden şekillendirelim. (Bu arada yalnız değilsin.)
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        Dövmeciyle Muhabbet Etmek Zorunda Mıyım?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Hayır. Sohbet edebiliriz, sessiz de olabiliriz. İstersen müzik takarsın, biz işimize bakarız.
+                        Rahat hissettiğin gibi ol, burası senin alanın.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: black; color: white;">
+            © 2025 Copyright:
+            <a class="Copyright" style="text-decoration: none; " href="https://www.instagram.com/kuzeyyacarr">Kuzey
+                Acar</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/17be60039f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

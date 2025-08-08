@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rionorte Tattoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <style>
+
+        body, html {
+            overflow-x: hidden;
+        }
+
+        .customnav-link {
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .customnav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .customnav-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        .theme-icon {
+            color: black;
+        }
+        
+
+        .hero {
+            height: 60vh;
+            background-image: url('/img/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .hero-overlay {
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: fadeInLeft 1s forwards;
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            animation: fadeInRight 1s forwards;
+        }
+
+        @keyframes fadeInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .section {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1rem;
+            flex-wrap: wrap;
+        }
+
+        .biz-kimiz,
+        .ne-yapiyoruz {
+            flex: 1 1 45%;
+            max-width: 45%;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                padding: 2rem 1rem;
+            }
+
+            .biz-kimiz,
+            .ne-yapiyoruz {
+                max-width: 100%;
+                flex: none;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+        }
+
+        h2 {
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #0d6efd;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero-heads {
+            color: black;
+        }
+
+        .center-button-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .fa-instagram:hover {
+            color: #962DB3;
+        }
+
+        .fa-youtube:hover {
+            color: red;
+        }
+
+        .fa-square-facebook:hover {
+            color: blue;
+        }
+
+        .Copyright {
+            color: white;
+        }
+
+        .Copyright:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="/img/logo.jpg" alt="logo" width="120" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="fw-semibold customnav-link nav-link">Ana Sayfa</a></li>
+                        <li class="nav-item"><a href="hizmetler.html"
+                                class="fw-semibold customnav-link nav-link">Hizmetler</a></li>
+                        <li class="nav-item"><a href="hakkinda.html"
+                                class="fw-semibold customnav-link nav-link">Hakkında</a></li>
+                        <li class="nav-item"><a href="sss.html" class="fw-semibold customnav-link nav-link">S.S.S</a>
+                        </li>
+                        <li class="nav-item"><a href="iletisim.html"
+                                class="fw-semibold customnav-link nav-link">İletişim</a></li>
+                        <li class="nav-item"><a href="#" class="fw-semibold theme-icon nav-link"><i
+                                    class="fa-solid fa-moon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            Hoş Geldin
+            <div>
+                <button type="button" class="btn btn-outline-light">Randevu Oluştur</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light flex-column align-items-center">
+        <div class="d-flex justify-content-center flex-wrap w-100">
+            <div class="biz-kimiz fade-in-left px-4">
+                <h2 class="hero-heads">Biz Kimiz?</h2>
+                <p>Ben Kuzey Acar, 2018'den beri sektörün içindeyim. Bodrum’da büyüdüm, buranın havası
+                    ve enerjisi dövmelerime de yansıyor. Yıllar içinde farklı yerlerde çalıştım, bayağı bi’ yol katettim
+                    ve
+                    artık kendi tarzımla işimi yapıyorum. İşimi seviyorum, çünkü dövme sadece iş değil, benim için bir
+                    tutku.</p>
+            </div>
+            <div class="ne-yapiyoruz fade-in-right px-4">
+                <h2 class="hero-heads">Ne Yapıyoruz?</h2>
+                <p>Bizim işimiz sadece dövme yapmak değil, senin hikayeni cildine işlemek. İster minimal, ister detaylı,
+                    ister cesur tasarımlar olsun, senin istediğin tarzda dövmeler yapıyoruz. Bodrum’un rahat, özgür ve
+                    cool
+                    havasını her dövmeye katıyoruz. Kısacası, yılların deneyimi ve samimiyetle buradayız. Dövmeni bize
+                    getir, gerisini biz hallederiz.</p>
+            </div>
+        </div>
+        <div class="center-button-wrapper">
+            <a href="hakkinda.html" class="btn btn-outline-dark " role="button">Hakkında</a>
+        </div>
+
+        <hr style="width:50%;margin-left:0; color: black;">
+
+        <div class="container text-center mt-5 ">
+            <h5 class="mb-3 fs-2 fw-bolder">Sosyal</h5>
+            <div class="d-flex justify-content-center gap-3">
+                <a style="font-size: 2em; color: black;" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a style="font-size: 2em; color: black;" href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a style="font-size: 2em; color: black;" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a style="font-size: 2em; color: black;" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: black; color: white;">
+            © 2025 Copyright:
+            <a class="Copyright" style="text-decoration: none; " href="https://www.instagram.com/kuzeyyacarr">Kuzey
+                Acar</a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/17be60039f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler</title>
+    <title>Rionorte Tattoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <style>
+
+        body, html {
+            overflow-x: hidden;
+        }
+        
+        .customnav-link {
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .customnav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .customnav-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        .theme-icon {
+            color: black;
+        }
+
+        .hero {
+            height: 60vh;
+            background-image: url('/img/services.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .hero-overlay {
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .section {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1rem;
+            flex-wrap: wrap;
+        }
+
+        .tarzimiz {
+
+            text-align: center;
+        }
+
+
+        h2 {
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .dovme-tasarimlari,
+        .right-photo {
+            flex: 1 1 45%;
+            text-align: left;
+            max-width: 45%;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                padding: 2rem 1rem;
+            }
+
+            .dovme-tasarimlari {
+                max-width: 100%;
+                flex: none;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+            .right-photo {
+                display: none;
+            }
+        }
+
+        .right-photo {
+            height: 60vh;
+            background-image: url('/img/services-1.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .right-info {
+            flex: 1 1 45%;
+            text-align: left;
+            max-width: 45%;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                padding: 2rem 1rem;
+            }
+
+            .right-info {
+                max-width: 100%;
+                flex: none;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+        }
+
+        .Copyright {
+            color: white;
+        }
+
+        .Copyright:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Rionorte Tattoo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menüyü Aç">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="fw-semibold customnav-link nav-link">Ana
+                                Sayfa</a></li>
+                        <li class="nav-item"><a href="#" class="fw-semibold customnav-link nav-link">Hizmetler</a></li>
+                        <li class="nav-item"><a href="hakkinda.html"
+                                class="fw-semibold customnav-link nav-link">Hakkında</a></li>
+                        <li class="nav-item"><a href="sss.html" class="fw-semibold customnav-link nav-link">S.S.S</a>
+                        </li>
+                        <li class="nav-item"><a href="iletisim.html"
+                                class="fw-semibold customnav-link nav-link">İletişim</a></li>
+                        <li class="nav-item"><a href="#" class="fw-semibold theme-icon nav-link"><i
+                                    class="fa-solid fa-moon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            Hizmetler
+        </div>
+    </section>
+
+    <section class="section bg-light flex-column align-items-center">
+        <div class="d-flex justify-content-center flex-wrap w-100">
+            <div class="tarzimiz fade-in-left px-4">
+                <h2 class="hero-heads">Tarzımız</h2>
+                <p>Steril ortam, kaliteli ekipman ve profesyonellik zaten olmazsa olmaz. Ama bizi asıl farklı kılan,
+                    işimize olan saygımız ve detaylara verdiğimiz önem. Dövmeyi sadece “güzel yapalım” diye değil, sizi
+                    gerçekten yansıtsın diye tasarlıyoruz.
+                    Acı eşiğinizden cilt yapınıza kadar her şeyi hesaba katıyor, rahat ve güvenli bir deneyim sunmaya
+                    özen gösteriyoruz.
+
+                    Her stil, her çizgi, her fikir bizde karşılığını bulur. Şimdi, ne yapmak istediğinize birlikte
+                    bakalım:</p>
+            </div>
+        </div>
+        <hr style="width:50%;margin-left:0; color: black;">
+    </section>
+
+    <section class="section bg-light flex-column align-items-center">
+        <div class="d-flex justify-content-center flex-wrap w-100">
+            <div class="dovme-tasarimlari fade-in-left px-4">
+                <h2 class="hero-heads">Dövme Tasarımları</h2>
+                <p>Her dövme bir iz, ama asıl farkı yaratan onun ne anlattığı. Bizim işimiz sadece dövme yapmak değil;
+                    hayalini kurduğun şeyi sana özel bir tasarıma dönüştürmek. İster yıllardır aklında taşıdığın bir
+                    fikir olsun, ister sadece hissettiğin bir şey — birlikte konuşup, sana özel, benzersiz bir tasarım
+                    yaratıyoruz. Kopyala-yapıştır işlere biz pek sıcak bakmıyoruz. Elbette ilham alınabilir ama sonunda
+                    ortaya çıkan şey senin teninde yaşayacaksa, sana ait olmalı. Çizim sürecinde fikirlerin bizler için
+                    çok önemli.
+                    Beraber şekillendiriyor, tasarımı son haline getirene kadar üzerinde çalışıyoruz.
+                    Minimal mi seviyorsun, yoksa detaylara mı aşıksın? Grafik, fine line, blackwork ya da tamamen özgün
+                    bir tarz mı arıyorsun? Tarzın ne olursa olsun, sana en uygun çizgiyi bulmak için buradayız.
+                    Unutma, iyi bir dövme önce iyi bir tasarımla başlar. Gerisi zaten bizim işimiz.</p>
+            </div>
+            <div class="right-photo fade-in-right px-4">
+
+            </div>
+        </div>
+        <hr style=" width:50%;margin-left:0; color: black;">
+    </section>
+
+    <section class="section bg-light flex-column align-items-center">
+        <h2 class="hero-heads">Stiller</h2>
+        <div class="d-flex justify-content-center flex-wrap w-100">
+            <div class="dovme-tasarimlari fade-in-left px-4">
+
+                <p> • <b>Minimal Dövme:</b>
+                    Az çoktur diyenler için. İnce çizgilerle, sade ama etkileyici tasarımlar. Küçük bir kelime, sembol
+                    ya da anlamlı bir detay.<br><br>
+
+                    • <b>Fine Line:</b>
+                    İncecik çizgilerle yapılan detaylı işler. Zarif ve estetik bir görünüm isteyenlerin favorisi.
+                    Genelde siyah mürekkeple çalışılır ama isteğe göre renklendirilebilir.<br><br>
+
+                    • <b>Blackwork:</b>
+                    Yoğun siyah alanlar, net kontrastlar ve güçlü görseller. Cesur bir tarz, iddialı dövmeler.<br><br>
+
+                    • <b>Linework:</b>
+                    Sadece çizgilerle oluşturulan desenler. Gölgelendirme yok, detay çok. Geometrik şekillerden
+                    portrelere kadar geniş bir yelpazesi var.<br><br>
+
+                    • <b>Dotwork:</b>
+                    Nokta nokta ilerleyen sabır işi bir stil. Gölgelendirmeler ve geçişler tamamen nokta kullanılarak
+                    yapılır. Sabırlı olanlar için eşsiz işler çıkar.</p>
+            </div>
+            <div class="right-info fade-in-right px-4">
+                <p>
+                    • <b>Geometrik:</b>
+                    Simetri, denge ve oran sevenler için. Düz çizgiler, daireler, üçgenler... Bazen mistik, bazen sadece
+                    estetik. <br><br>
+
+                    • <b>Renkli Dövme: </b>
+                    Canlı, enerjik ve dikkat çekici. Renk geçişleriyle ve tonlamalarla adeta cildin üstünde bir tablo
+                    gibi duran işler. <br><br>
+
+                    • <b>Cover-up (Kapatma): </b>
+                    Eski ya da istenmeyen dövmeleri tamamen yeni bir tasarımla örtme sanatı. Hem teknik bilgi hem de
+                    yaratıcılık gerektirir. İyi yapıldığında eskisinden daha güzel olur. <br><br>
+
+                    • <b>Custom (Özel Tasarım): </b>
+                    Hazır bir şey aramıyorsan ve sana özel bir şey istiyorsan, bu tarz tam sana göre. Sıfırdan, sadece
+                    senin için çizilir. <br><br>
+
+                    • <b>Realistik (Gerçekçi Dövme):</b>
+                    Fotoğraf gibi görünen detaylı dövmeler. Portre, hayvan, objeler ya da doğa manzaraları...
+                    Gerçekçiliği yakalamak ustalık ister ve sonuçlar genellikle nefes kesicidir. <br><br>
+
+
+                </p>
+            </div>
+        </div>
+        <hr style=" width:50%;margin-left:0; color: black;">
+        <h3><i style="color: red;" class="fa-solid fa-exclamation fa"></i> Dikkat </h3>
+        <p1>Stüdyomuzda Piercing Hizmeti Verilmemektedir.</p1>
+        <hr style=" width: 50%; margin-left: 0; color: black;">
+
+        <h2>Kafana Takılan Sorular Görüyorum?</h2>
+        <h3 class="mt-2">Bizimle İletişime Geçmekten Çekinme!</h3>
+        <a href="iletisim.html" class="btn btn-outline-dark mt-4" role="button">İletişim</a>
+        <i class=" mt-5 fa-solid fa-hand-point-up fa-bounce fa-2xl"></i>
+
+    </section>
+
+
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: black; color: white;">
+            © 2025 Copyright:
+            <a class="Copyright" style="text-decoration: none; " href="https://www.instagram.com/kuzeyyacarr">Kuzey
+                Acar</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/17be60039f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
